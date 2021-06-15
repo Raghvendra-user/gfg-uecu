@@ -19,6 +19,10 @@
 <style>
     /* Section 1 CSS */
     
+    h1 {
+        z-index: 3;
+    }
+    
     .landing {
         display: flex;
         flex-direction: row;
@@ -90,9 +94,9 @@
     }
     
     .aboutText img {
-        width: 35vw;
+        width: 47vw;
         position: absolute;
-        top: 15px;
+        top: 20px;
         left: -40px;
     }
     
@@ -114,17 +118,25 @@
     }
     
     li p {
-        font-size: 16px;
+        font-size: 19px;
         color: #000;
         padding-left: 60px;
         line-height: 30px;
-        opacity: 0.6;
+        opacity: 1;
     }
     
     li span {
         position: absolute;
-        line-height: 25px;
+        line-height: 30px;
         font-weight: 600;
+    }
+    
+    .join {
+        margin-left: 200px;
+    }
+    
+    .list1 {
+        padding-left: 90px;
     }
     /* Section 3 */
     
@@ -184,7 +196,7 @@
             top: -15px;
         }
         .aboutText img {
-            width: 42vw;
+            width: 55vw;
             top: -55px;
             left: -50px;
         }
@@ -238,6 +250,16 @@
         .footer {
             padding-bottom: 40px;
         }
+        .join {
+            margin: 0px;
+        }
+        .list1 {
+            padding: 0px;
+        }
+        .sec2img {
+            left: -65px !important;
+            top: -50px !important;
+        }
         /* Section 3 */
         .abtext2 {
             margin: 0px;
@@ -255,8 +277,8 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <img src="gg.png" alt="" width="43" height="40" class="d-inline-block align-text-top" />
-        <a class="navbar-brand" href="index.html">GeeksForGeeks-UECU </a>
+        <img src="gg.png" alt="" style="height: 55px;width: 80px;" class="d-inline-block align-text-top" />
+        <!-- <a class="navbar-brand" href="index.html">GeeksForGeeks-UECU </a> -->
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -267,7 +289,7 @@
                     <a class="nav-link current-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Team</a>
+                    <a class="nav-link" href="#">Our Team</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="projects.html">Events</a>
@@ -628,13 +650,14 @@
     
     <div class="about">
       <div class="aboutText" data-aos="fade-up" data-aos-duration="1000">
-          <h1 id="abtext ">
+          <h1 id="abtext " class="join">
               Why to
               <span style="color: #2f8be0">Join us?</span>
                 </h1>
-                <img src="https://image.freepik.com/free-vector/education-illustration-concept-with-characters-world-books-ruler_269730-43.jpg" alt="" />
+                <img class="sec2img" src="https://img.freepik.com/free-vector/business-team-brainstorm-idea-lightbulb-from-jigsaw-working-team-collaboration-enterprise-cooperation-colleagues-mutual-assistance-concept-pinkish-coral-bluevector-isolated-illustration_335657-1651.jpg?size=626&ext=jpg&ga=GA1.2.2140525702.1623456000"
+                    alt="" />
             </div>
-            <div class="aboutList" data-aos="fade-left" data-aos-duration="1000">
+            <div class="aboutList list1" data-aos="fade-left" data-aos-duration="1000">
                 <ol>
                     <li>
                         <span>01</span>
@@ -645,7 +668,7 @@
                     <li>
                         <span>02</span>
                         <p>
-                            Intership Opportunities with GeeksForGekks.
+                            internship Opportunities with GeeksForGekks.
                         </p>
                     </li>
                     <li>
@@ -674,7 +697,7 @@
                         <span style="color: #2f8be0">provide to Community?</span>
                     </h1>
                 </div>
-                <img src="https://image.freepik.com/free-vector/education-illustration-concept-with-characters-world-books-ruler_269730-43.jpg" alt="" />
+                <img src="https://cdni.iconscout.com/illustration/premium/thumb/online-education-2246489-1911561.png" alt="" />
             </div>
             <div class="aboutList">
                 <ol>
