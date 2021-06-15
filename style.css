@@ -233,6 +233,7 @@ html {
         border-bottom: 3px solid #22B6A7;
     }
     .nav-link {
+        font-family: sans-serif;
         color: #fff !important;
     }
     .nav-link:hover {
