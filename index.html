@@ -1,3 +1,42 @@
+<!-- <?php
+$insert = false;
+if (isset($_POST['name'])) {
+    // Set connection variables
+    // $server = 'mysql:host=sql204.epizy.com;dbname=epiz_28336656_projects';
+    $server = "sql6.freemysqlhosting.net";
+    $username = "sql6421251";
+    $password = "44ZaFyYdIq";
+
+    // Create a database connection
+    $con = mysqli_connect($server, $username, $password);
+
+    // Check for connection success
+    if (!$con) {
+        die("connection to this database failed due to" . mysqli_connect_error());
+    }
+    // echo "Success connecting to the db";
+
+    // Collect post variables
+    $name = $_POST['name'];
+    $gender = $_POST['email'];
+    $age = $_POST['message'];
+
+    $sql = "INSERT INTO `sql6421251`.`messages` (`name`,  `email`, `message`) VALUES ('$name','$email', '$message'";
+    // echo $sql;
+
+    // Execute the query
+    if ($con->query($sql) == true) {
+        // echo "Successfully inserted";
+
+        // Flag for successful insertion
+        $insert = true;
+    } else {
+        echo "ERROR: $sql <br> $con->error";
+    }
+
+    // Close the database connection
+    $con->close();
+} -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -321,7 +360,7 @@
                     <a class="nav-link" href="events.html">Events</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="education.html">Blogs</a>
+                    <a class="nav-link" href="blog.html">Blogs</a>
                 </li>
                 <div class="bike">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="-80 0 650 400" preserveAspectRatio="xMinYMin meet">
@@ -805,7 +844,7 @@
                     <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
                         <div class="form-style-6">
                             <h6 class="display">Get in Touch</h6>
-                            <form action="form.php" method="POST">
+                            <form action="index.php" method="POST">
                                 <input type="text" name="name" id="name" placeholder="Your Name" />
                                 <input type="email" name="email" id="email" placeholder="Email Address" />
                                 <textarea name="message" id="message" placeholder="Type your Message"></textarea>

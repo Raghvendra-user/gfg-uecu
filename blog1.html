@@ -91,196 +91,42 @@
         }
         
         .landingImage img {
-            width: 50vw;
+            width: 40vw;
             float: left;
         }
         
         .landingImageContainer {
             width: auto;
-            margin-right: 50%;
-            margin-right: -15%
+            /* margin-right: 50%; */
+            margin-right: -10%
         }
-        /* events */
+        /* blog */
         
-        .eventshead {
-            margin-bottom: -60px;
-            color: #2A8E47;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: underline;
-        }
-        
-        #event {
-            margin-top: 0rem;
-            padding-left: 0px;
-            display: flex;
-            /* padding-top: 20px; */
-            align-items: center;
-            /* min-height: 100vh; */
-            width: 100%;
-            height: auto;
-            /* background-image: url('main logo2.png'); */
-            background-image: cross-fade();
-            background-origin: content-box;
-            background-position: 150px;
-        }
-        
-        #event .heading {
-            font-size: 5rem;
-            padding-top: 5rem;
-            padding-left: 7rem;
-            margin: 0.2rem 0;
-            color: #fff;
-            text-align: center;
-            position: relative;
-            color: white;
-        }
-        
-        #event .heading::after {
-            content: '';
-            position: absolute;
-            bottom: -1.5rem;
-            left: 49%;
-            -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-            height: 0.3rem;
-            width: 30%;
-            border-radius: 5rem;
-            background: white;
-        }
-        
-        #event .box-container {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            -webkit-box-pack: initial;
-            -ms-flex-pack: center;
-            justify-content: space-evenly;
-            width: 100%;
-            -ms-flex-wrap: wrap;
+        .blog {
             flex-wrap: wrap;
-            margin-top: 5rem;
-        }
-        
-        #event .box-container .box {
-            height: 25rem;
-            width: 17rem;
-            border-radius: 0.5rem;
-            -webkit-box-shadow: 0 0 0rem #fff;
-            box-shadow: red;
-            margin: 1rem;
-            display: -webkit-box;
-            display: -ms-flexbox;
             display: flex;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
             justify-content: center;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -ms-flex-flow: column;
-            flex-flow: column;
-            cursor: pointer;
-            overflow: hidden;
-        }
-        
-        #event .box-container .box img {
-            height: 75%;
-            width: 85%;
-            -webkit-transform: translateY(5rem);
-            transform: translateY(5rem);
-            border-radius: 10%;
-        }
-        
-        #event .box-container .box p {
-            font-size: 1.3rem;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: center;
-            color: #fff;
-            opacity: 0;
-            -webkit-transform: translateY(12rem);
-            transform: translateY(12rem);
-            padding: 0 0.4rem;
+            width: 75%;
+            align-items: flex-start;
+            margin-left: 12%;
         }
         
-        #event .box-container .box:hover p {
-            color: black;
-            opacity: 1;
-            -webkit-transform: translateY(0rem);
-            transform: translateY(0rem);
+        .blog p {
+            font-size: 25px;
+            text-align: start;
         }
         
-        #event .box-container .box:hover img {
-            margin-top: 20px;
-            height: 25%;
-            width: 40%;
-            -webkit-transform: translateY(-2rem);
-            transform: translateY(-2rem);
-        }
-        
-        #event .box-container .box:hover {
-            background: #d8d7d7;
-            color: black;
-        }
-        
-        @keyframes text {
-            0% {
-                color: black;
-                margin-bottom: -40px;
-            }
-            30% {
-                letter-spacing: 25px;
-                margin-bottom: -40px;
-            }
-            85% {
-                letter-spacing: 8px;
-                margin-bottom: -40px;
-            }
-        }
-        
-        .btn2 {
-            background-color: white;
-            border-radius: 8%;
-            position: relative;
-            width: 180px;
-            height: 60px;
-            margin-left: 32px;
-            margin-top: 30px;
-            /* margin: 20px; */
-            /* line-height: 60px; */
-            /* letter-spacing: 2px; */
-            text-decoration: none;
-            text-transform: uppercase;
+        .blog img {
+            height: 30vh;
             text-align: center;
-            /* color: whitesmoke; */
-            transition: 0.5s;
-            border: 1px solid #2A8E47;
-            display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
         }
         
-        .btn2:hover {
-            border: 1px solid transparent;
-            background: #2A8E47 url(https://i.postimg.cc/wBXGXbWN/pixel.png);
-            transition-delay: 0.8s;
-            background-size: 180px;
-            animation: animate 0.7s steps(8) forwards;
-        }
-        
-        @keyframes animate {
-            0% {
-                background-position-y: 0;
-            }
-            100% {
-                background-position-y: -480px;
-            }
+        .lang {
+            font-weight: bold;
+            font-size: 27px;
         }
         
         @media only screen and (max-width: 600px) {
@@ -295,12 +141,13 @@
             .landingText h1 {
                 font-size: 6vw;
                 margin: 0 !important;
+                font-weight: 500;
             }
             .landingText h1 span {
                 font-size: 3vh !important;
             }
             .landingText h3 {
-                font-size: 16px;
+                font-size: 20px;
             }
             .landingText .btn {
                 margin: 0 auto;
@@ -316,6 +163,13 @@
                 width: auto;
                 margin-right: 50%"
 
+            }
+            .blog {
+                width: 90%;
+                margin-left: 6%;
+            }
+            .blog img {
+                height: 16vh;
             }
         }
     </style>
@@ -339,10 +193,10 @@
                     <a class="nav-link " href="team.html">Our Team</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link current-link" href="events.html">Events</a>
+                    <a class="nav-link " href="events.html">Events</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="blog.html">Blogs</a>
+                    <a class="nav-link current-link" href="blog.html">Blogs</a>
                 </li>
                 <div class="bike">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="-80 0 650 400" preserveAspectRatio="xMinYMin meet">
@@ -668,58 +522,82 @@
     <div class="landing">
         <div class="landingText" style="">
             <h1 style="color: #2A8E47; text-align: center;">
-                “Perfection is not attainable, <span style="color: #e0501b; font-size: 3vw">
-                    but if we chase perfection we can catch excellence.”</span
-        >
-      </h1>
-      <h3 style="color: black !important; text-align: center; opacity: 1;">
+                Best Programming Languages To Learn In 2021
+
+            </h1>
+            <h3 style="text-align: end; padding-top: 5vh;padding-right: 5vh;">-Virat Trivedi</h3>
+            <!-- <h3 style="color: black !important; text-align: center; opacity: 1;">
         Planning encompasses all aspects of the event, from its initial conception and idea generation stage through to the timetable for the night itself. Everyone wants their events to run smoothly, and using an events management company can help to reduce stress and enable the organisers to enjoy their night.
-      </h3>
-      <!-- <div class="btn">
+      </h3> -->
+            <!-- <div class="btn">
         <a href="https://www.google.com/search?q=how+to+stop+corona&rlz=1C1FHFK_enIN931IN931&oq=how+to+stop+corona&aqs=chrome..69i57.3293j0j7&sourceid=chrome&ie=UTF-8">Learn More</a>
       </div> -->
-    </div>
-    <div class='landingImageContainer'>
-      <div class="landingImage">
-        <img src="https://img.freepik.com/free-vector/events-concept-illustration_114360-931.jpg?size=626&ext=jpg" alt="" style="padding-right: 30px;" />
-      </div>
-    </div>
-  </div>
-
-<!-- events -->
-  <div class="eventshead">
-    <h1 style="font-family: sans-serif;
-    font-size: 50px;
-    font-weight: bold;">All Events</h1>
-</div>
-
-    <!-- Events -->
-    <section id="event">
-        <header style="width: 100%;">
-            <div class="container h-100 d-flex " style="justify-content: center;">
-                <div class="d-flex h-800 text-center align-items-center">
-                    <div class="w-1200 text-white">
-                        <div class="box-container">
-                            <div class="box" >
-                                <img src="./events/coding_minutes.jpeg" alt="" />
-
-                                <p style="text-align: start;">
-                                                                    
-                                  Date- 26-June-2021<br>
-                                  Time- 7:00-9:00 pm<br>
-                                  Mentor- Prateek Narang<br>
-                                  Platform- Youtube Unlisted
-                                <a href="./index.html"> <btn class=" btn2" >Register Now</btn>
-</a>
-                                </p>
-                              </div>
-                           
-                        </div>
-                    </div>
-                </div>
+        </div>
+        <div class='landingImageContainer'>
+            <div class="landingImage">
+                <img src="https://itchronicles.com/wp-content/uploads/2018/10/bigstock-Programming-Web-Banner-Best-P-258081862.jpg" alt="" style="padding-right: 30px;" />
             </div>
-        </header>
-    </section>
+        </div>
+    </div>
+
+    <div class="blog">
+        <p>For anyone who has just forayed into the world of coding, one of the toughest things to do is to decide which programming language is the best, to begin with. there are hundreds of options out there, and choosing any one language from this plethora
+            of choices may be quite challenging for many.Hence, we have prepared an exhaustive list containing the most in-demand coding languages of 2021.<br> <br> This list has been created keeping in mind factors such as the number of jobs available
+            for a particular language, popularity of the language(determined by the number of people actively using a language), number of resources, etc.<br><br> The list given below shows the most in-demand coding languages in 2021. <br><br></p>
+        <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/c-logo.png"><br>
+        <p>1.
+            <span class="lang">C/C++ </span> : C++ is an extension of C and a low-level programming language, created in the 1980s. it is one of the fastest programming languages out there and is among the most used languages for competitive coding. It
+            has applications in graphics-intensive software such as games, photo and video editing apps. It also has a very large ecosystem, with users using and writing open-source libraries which can be used by others using or learning the language.
+            Recruiters are always on the lookout for people with strong skills in C/C++ for jobs in open source application development and android development. While other low-level languages like Rust are giving a steady competition to it, knowing C/C++
+            is still a valuable skill to have in 2021.
+            <br> <br></p>
+        <img src="http://assets.stickpng.com/images/58480979cef1014c0b5e4901.png"><br>
+        <p>2. <span class="lang">JAVA </span> : Most sites on the internet define Java as a high level, object-oriented and secure programming language. It is considered to be a good choice for large, complex backend applications. Companies like Google,
+            Netflix and Amazon are among many large companies that use Java for backend development. Indian Recruiters usually require candidates with strong java skills for roles in AWS developers, Angular JS developers, API developers, and Android development.
+            Java also finds use in mobile applications and web-based applications. Even though the number of users of this language is slowly decreasing over the past three years, proficiency in Java might prove to be a wonderful addition to one's resume
+            in 2021.<br><br> </p>
+        <img src="https://cdn.freebiesupply.com/logos/large/2x/php-1-logo-png-transparent.png"><br>
+        <p>
+            3. <span class="lang">PHP </span> : PHP is a traditional backend web language, created in 1994. It is used to develop static and dynamic web applications. Proficiency in PHP paves the way to jobs as a full-stack developer and also towards
+            projects involving Drupal. Although PHP has lost a chunk of its market share to Python and Javascript, having good PHP programming skills might still prove useful in 2021, as most of the internet is still written in PHP.<br> <br> </p>
+        <img src="http://assets.stickpng.com/images/5848152fcef1014c0b5e4967.png"><br>
+        <p>
+            4.
+            <span class="lang">Python </span> : Considered by many to be one of the best languages for beginners, Python is a programming language that is used in scripting, data science, back end web development, Machine Learning and Artificial Intelligence.
+            Another reason for Python's popularity is its large library ecosystem, where there's a library for almost anything one might want to do. Unlike many other contemporaries of Python, the language has seen significant growth in the number of
+            users in the past three years. Jobs for people skilled in Python include roles in Android development, AWS development, Angular JS development and API development. There is no harm in considering Python as one of the must learn languages of
+            2021.
+            <br> <br></p>
+        <img src="https://www.freepnglogos.com/uploads/javascript-png/javascript-logo-transparent-logo-javascript-images-3.png"><br>
+        <p> 5. <span class="lang">Javascript </span> : Javascript is a high-level programming language. It is the go-to language for front-end development. It also finds application in back-end development with NODE and DENO runtimes. It also rivals Python
+            for having one of the best library ecosystems with the NPM project manager from which one can download code or libraries. It is one of the most sought after languages on Stack Overflow. Even though the usage of the language has slightly declined
+            over the past three years, it remains one of the most used languages by the Indian workforce and may remain so for the coming few years. Recruiters search for candidates fluent in JavaScript for roles that include frontend development (UI)
+            developers and database developers. Javascript proficiency also comes in handy for projects in API and RPA. This language will prove to be a valuable addition to one's resume in 2021.<br> <br></p>
+        <img src="http://assets.stickpng.com/thumbs/58480a4ccef1014c0b5e4918.png">
+        <p> 6.
+            <span class="lang">Kotlin </span> : Kotlin is a modern programming language that has been inspired by other languages such as Java, C#, Python. It is fast to write and also involves much fewer errors or bugs than other programming languages.
+            Due to Java bytecodes, Java libraries and frameworks can also be used in Kotlin. It was announced as the official android development language in 2017 by Google. Knowing Kotlin will prove very beneficial to people looking for roles in Android
+            Development.
+            <br> <br></p>
+        <img src="https://cdn.freebiesupply.com/logos/large/2x/scala-4-logo-png-transparent.png">
+        <p> 7. <span class="lang">Scala </span> : Scala, just like Kotlin, has been built upon the ideas of Java and aspires to be an improved version of it in multiple ways. Scala has a larger user community and hence has a larger number of resources and
+            tutorials compared to contemporaries like Kotlin. It is much faster compared to other languages like Python. It has a flexible syntax and is compatible with JVM.Scala also uses Apache Spark, a data management tool that is used for Hadoop Integration(Fast
+            processing of large chunks of data). All these factors make Scala one of them must learn languages for people looking for roles in Data Science and Cloud Development in 2021. <br> <br> </p>
+        <img src="https://www.nicepng.com/png/detail/207-2073547_sql-server-icon-png-29-transparent-background-database.png">
+        <p>7. <span class="lang">SQL </span> : (Standard Query Language) SQL is designed for managing data in a Relational Database Management System (RDBMS). It deals with the age and retrieval of data in a database. Recruiters look for candidates fluent
+            in SQL for roles that include Azure developers, API developers, data virtualization developers and RPA developers. There is a growing demand for professionals proficient in SQL, and learning it might prove to be very advantageous in 2021.<br><br></p>
+        <img src="https://www.r-project.org/logo/Rlogo.png">
+        <br>
+        <p> 9. <span class="lang">R </span> : language R language has been gaining wide popularity among professionals in Data and Statistical Analysis. It is primarily a software environment for statistical computing and graphics. It also plays a critical
+            role in social media analysis and can draw data from platforms such as Instagram, Twitter and Facebook. People proficient in R are highly sought after for roles such as Data Scientist, R&D engineer and data analyst. People looking to get into
+            RPA development should also have fluency in the R language. All these reasons are sufficient enough to make them learn languages in 2021.<br> <br></p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/1200px-Go_Logo_Blue.svg.png"><br>
+        <p> 10. <span class="lang">GO </span> : Developed by Google, Go is one of the most promising programming languages out there. It is a system-level language used for programming across large-scale network servers. It is very simple to learn, with many
+            experts suggesting that users can learn the basics of the language in a single evening. It offers quick compilation and execution and is as simple to use as it is to learn. It finds application in Machine Learning, big data, audio and video
+            editing, etc. It is one of those languages whose popularity is increasing with each passing day and people will surely not regret learning this language in 2021.
+        </p>
+    </div>
+
 
     <!-- Footer -->
 
