@@ -31,6 +31,15 @@
         }
         /*  */
         
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        a:hover {
+            text-decoration: none;
+        }
+        
         @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700);
         body {
             text-decoration: none;
@@ -182,9 +191,10 @@
         
         #event .box-container .box img {
             height: 75%;
-            width: 75%;
+            width: 85%;
             -webkit-transform: translateY(5rem);
             transform: translateY(5rem);
+            border-radius: 10%;
         }
         
         #event .box-container .box p {
@@ -230,6 +240,45 @@
             85% {
                 letter-spacing: 8px;
                 margin-bottom: -40px;
+            }
+        }
+        
+        .btn2 {
+            background-color: white;
+            border-radius: 8%;
+            position: relative;
+            width: 180px;
+            height: 60px;
+            margin-left: 32px;
+            margin-top: 30px;
+            /* margin: 20px; */
+            /* line-height: 60px; */
+            /* letter-spacing: 2px; */
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            /* color: whitesmoke; */
+            transition: 0.5s;
+            border: 1px solid #2A8E47;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .btn2:hover {
+            border: 1px solid transparent;
+            background: #2A8E47 url(https://i.postimg.cc/wBXGXbWN/pixel.png);
+            transition-delay: 0.8s;
+            background-size: 180px;
+            animation: animate 0.7s steps(8) forwards;
+        }
+        
+        @keyframes animate {
+            0% {
+                background-position-y: 0;
+            }
+            100% {
+                background-position-y: -480px;
             }
         }
         
@@ -646,46 +695,24 @@
     <!-- Events -->
     <section id="event">
         <header style="width: 100%;">
-            <div class="container h-100">
+            <div class="container h-100 d-flex " style="justify-content: center;">
                 <div class="d-flex h-800 text-center align-items-center">
                     <div class="w-1200 text-white">
                         <div class="box-container">
-                            <div class="box" data-aos="flip-right">
-                                <img src="logo6.png" alt="" />
+                            <div class="box" >
+                                <img src="./events/coding_minutes.jpeg" alt="" />
 
-                                <p>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla dolor fuga soluta quo quos delectus praesentium aliquam officia? Repellendus, natus.
+                                <p style="text-align: start;">
+                                                                    
+                                  Date- 26-June-2021<br>
+                                  Time- 7:00-9:00 pm<br>
+                                  Mentor- Prateek Narang<br>
+                                  Platform- Youtube Unlisted
+                                <a href="./index.html"> <btn class=" btn2" >Register Now</btn>
+</a>
                                 </p>
-                            </div>
-                            <div class="box" data-aos="flip-right">
-                                <img src="logo6.png" alt="" />
-
-                                <p>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla dolor fuga soluta quo quos delectus praesentium aliquam officia? Repellendus, natus.
-                                </p>
-                            </div>
-                            <div class="box" data-aos="flip-right">
-                                <img src="logo6.png" alt="" />
-
-                                <p>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla dolor fuga soluta quo quos delectus praesentium aliquam officia? Repellendus, natus.
-                                </p>
-                            </div> 
-                            <div class="box" data-aos="flip-right">
-                                <img src="logo6.png" alt="" />
-
-                                <p>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla dolor fuga soluta quo quos delectus praesentium aliquam officia? Repellendus, natus.
-                                </p>
-                            </div> 
-                            <div class="box" data-aos="flip-right">
-                                <img src="logo6.png" alt="" />
-
-                                <p>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla dolor fuga soluta quo quos delectus praesentium aliquam officia? Repellendus, natus.
-                                </p>
-                            </div>
-                            
+                              </div>
+                           
                         </div>
                     </div>
                 </div>
