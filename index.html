@@ -1,42 +1,4 @@
-<!--<?php
-$insert = false;
-if (isset($_POST['name'])) {
-    // Set connection variables
-    // $server = 'mysql:host=sql204.epizy.com;dbname=epiz_28336656_projects';
-    $server = "sql6.freemysqlhosting.net";
-    $username = "sql6421251";
-    $password = "44ZaFyYdIq";
 
-    // Create a database connection
-    $con = mysqli_connect($server, $username, $password);
-
-    // Check for connection success
-    if (!$con) {
-        die("connection to this database failed due to" . mysqli_connect_error());
-    }
-    // echo "Success connecting to the db";
-
-    // Collect post variables
-    $name = $_POST['name'];
-    $gender = $_POST['email'];
-    $age = $_POST['message'];
-
-    $sql = "INSERT INTO `sql6421251`.`messages` (`name`,  `email`, `message`) VALUES ('$name','$email', '$message'";
-    // echo $sql;
-
-    // Execute the query
-    if ($con->query($sql) == true) {
-        // echo "Successfully inserted";
-
-        // Flag for successful insertion
-        $insert = true;
-    } else {
-        echo "ERROR: $sql <br> $con->error";
-    }
-
-    // Close the database connection
-    $con->close();
-} -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -355,16 +317,16 @@ if (isset($_POST['name'])) {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto" id="navbar-content">
                 <li class="nav-item">
-                    <a class="nav-link current-link" href="index.html">Home</a>
+                    <a class="nav-link current-link" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="team.html">Our Team</a>
+                    <a class="nav-link" href="team">Our Team</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="events.html">Events</a>
+                    <a class="nav-link" href="events">Events</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="blog.html">Blogs</a>
+                    <a class="nav-link" href="blog">Blogs</a>
                 </li>
                 <div class="bike">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="-80 0 650 400" preserveAspectRatio="xMinYMin meet">
