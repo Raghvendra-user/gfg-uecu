@@ -151,6 +151,11 @@ html {
 }
 
 
+.nav-link {
+    color: white !important;
+    font-size: 40px !important;
+}
+
 /*
 -------------------------------------
     SIDEBAR SVG ANIMATION
